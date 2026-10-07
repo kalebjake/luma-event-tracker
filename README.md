@@ -35,7 +35,7 @@ It works with any public Luma calendar: conference side events, a city's tech ca
 **Claude Code:** clone it into your skills folder.
 
 ```bash
-git clone https://github.com/kalebjake/luma-team-tracker ~/.claude/skills/luma-team-tracker
+git clone https://github.com/kalebjake/luma-event-tracker ~/.claude/skills/luma-team-tracker
 ```
 
 ## Requirements and limits
