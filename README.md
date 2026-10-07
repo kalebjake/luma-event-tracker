@@ -2,14 +2,20 @@
 
 A Claude skill that turns any public Luma calendar into a shared tracker for your team.
 
-Conference weeks now come with a Luma calendar of 50, 100, sometimes 300 side events. Figuring out which ones matter means opening every event, reading the description, and then posting in Slack to ask who else is going. This skill does that reading for you and gives your team one page to coordinate on.
+Conference weeks now come with a Luma calendar of 50, 100, sometimes 300 side events. This skill solves two problems that come with that.
+
+**1. Knowing what's worth your time.** Today, figuring out which events matter means opening every one and reading its description. This skill does that reading for you. Every event lands on one page with a one-sentence summary and topic tags, and the page syncs with Luma daily, so it stays the single source of truth as new events get added.
+
+**2. Planning coverage as a team.** Once you know which events matter, the next question is who's going to which ones. Usually that gets sorted out in a Slack thread that's out of date by Tuesday. Here, each teammate marks the events they've requested or been approved for, so everyone can see where the team will be, where two people are doubled up, and which high-priority events nobody has covered yet. That gives you something concrete to discuss when you plan your event strategy.
+
+## What you get
 
 Give Claude a Luma calendar link. You get back a live page with:
 
 - **Every event on one page**, grouped by day, in the event's local time.
 - **A one-sentence summary of each event**, written from its Luma description, so you know what it is without clicking through.
 - **Topic tags and filters** chosen for that calendar (for a fintech conference: Payments, Institutional, Developer, Founders & Capital, and so on). Teammates can correct a tag with two clicks.
-- **Team sign-ups.** Each person marks Requested or Approved (or Interested and Going for open-registration events), and everyone sees who's covering what. People are identified by their Claude login, so there's nothing to set up.
+- **Team sign-ups and coverage.** Each person marks Requested or Approved (or Interested and Going for open-registration events). A "Team activity" filter shows only events someone is covering, and combining it with a topic filter shows your coverage for that topic. People are identified by their Claude login, so there's nothing to set up.
 - **A daily sync from Luma.** New events appear, changed times and venues update, and events that get pulled are flagged instead of deleted so nobody loses their sign-up.
 
 ## Use it
@@ -29,7 +35,7 @@ It works with any public Luma calendar: conference side events, a city's tech ca
 **Claude Code:** clone it into your skills folder.
 
 ```bash
-git clone https://github.com/<your-username>/luma-team-tracker ~/.claude/skills/luma-team-tracker
+git clone https://github.com/kalebjake/luma-team-tracker ~/.claude/skills/luma-team-tracker
 ```
 
 ## Requirements and limits
